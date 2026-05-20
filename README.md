@@ -10,15 +10,13 @@
 
 Кожна лабораторна робота знаходиться в окремій гілці:
 
-| Гілка | Тема | Статус |
-|---|---|---|
-| [`lab01`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab01) | — | ✅ |
-| [`lab02`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab02) | Вкладена навігація. FlatList та SectionList | ✅ |
-| `lab03` | — | ⏳ |
-| `lab04` | — | ⏳ |
-| `lab05` | — | ⏳ |
-| `lab06` | — | ⏳ |
-| `lab07` | — | ⏳ |
+| Гілка                                                                     | Тема                                        | Статус |
+|---------------------------------------------------------------------------|---------------------------------------------|-------|
+| [`lab01`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab01) | Знайомство з основними компонентами.        | ✅     |
+| [`lab02`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab02) | Вкладена навігація. FlatList та SectionList | ✅     |
+| [`lab03`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab03) | —                                           | ⏳ |
+| `lab04`                                                                   | —                                           | ⏳     |
+
 
 ---
 
