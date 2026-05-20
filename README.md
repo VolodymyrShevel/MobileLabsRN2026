@@ -1,51 +1,107 @@
-# MobileLabsRN2026 — Лабораторні роботи з React Native
+# Лабораторна робота №1 — React Native
 
-**Студент:** Шевель Володимир  
-**Репозиторій:** [VolodymyrShevel/MobileLabsRN2026](https://github.com/VolodymyrShevel/MobileLabsRN2026)  
-**Курс:** Мобільна розробка — React Native, 2026
+> **Тема:** Використання Expo для створення найпростішого додатку React Native. Знайомство з основними компонентами.
 
----
-
-## Структура репозиторію
-
-Кожна лабораторна робота знаходиться в окремій гілці:
-
-| Гілка | Тема | Статус |
-|---|---|---|
-| [`lab01`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab01) | — | ✅ |
-| [`lab02`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab02) | Вкладена навігація. FlatList та SectionList | ✅ |
-| `lab03` | — | ⏳ |
-| `lab04` | — | ⏳ |
-| `lab05` | — | ⏳ |
-| `lab06` | — | ⏳ |
-| `lab07` | — | ⏳ |
+**Репозиторій:** [VolodymyrShevel/MobileLabsRN2026](https://github.com/VolodymyrShevel/MobileLabsRN2026) | **Гілка:** `lab01`
 
 ---
 
-## Як запустити будь-яку лабораторну
+## Інструкція запуску
 
 ```bash
-# 1. Клонувати репозиторій
 git clone https://github.com/VolodymyrShevel/MobileLabsRN2026.git
 cd MobileLabsRN2026
-
-# 2. Перейти на потрібну гілку (наприклад lab02)
-git checkout lab02
-
-# 3. Перейти в папку лабораторної
-cd lab02
-
-# 4. Встановити залежності
+git checkout lab01
+cd lab01
 npm install
-
-# 5. Запустити
 npx expo start
 ```
 
 ---
 
-## Технології
+## Структура проєкту
 
-- [React Native](https://reactnative.dev/)
-- [Expo](https://expo.dev/)
-- [React Navigation](https://reactnavigation.org/)
+```
+lab01/
+├── App.js
+├── package.json
+└── src/
+    ├── screens/
+    │   ├── HomeScreen.js       ← головна (новини)
+    │   ├── GalleryScreen.js    ← фотогалерея
+    │   └── ProfileScreen.js    ← реєстрація
+    └── navigation/
+        └── AppNavigator.js     ← Top Tab Navigator
+```
+
+---
+
+## Опис реалізованого функціоналу
+
+### 🏠 Головний екран — Новини
+- Список новин з зображенням, заголовком, датою та коротким текстом
+- Футер з прізвищем, ім'ям та групою
+
+### 🖼 Фотогалерея
+- Сітка зображень у два стовпці
+- Футер з прізвищем, ім'ям та групою
+
+### 👤 Профіль — Реєстрація
+- Форма з полями: електронна пошта, пароль, пароль (ще раз), прізвище, ім'я
+- Кнопка "Зареєструватися"
+- Футер з прізвищем, ім'ям та групою
+
+### 🗂 Навігація
+- `@react-navigation/material-top-tabs` — верхня панель вкладок
+- Три вкладки: Головна / Фотогалерея / Профіль
+- Іконки через `@expo/vector-icons`
+
+---
+
+## Скріншоти
+
+> *(Додайте скріншоти після запуску)*
+
+| Головна | Фотогалерея | Профіль |
+|---|---|---|
+| `screenshots/home.png` | `screenshots/gallery.png` | `screenshots/profile.png` |
+
+---
+
+## Способи запуску мобільного додатку
+
+### 1. Expo Go (фізичний пристрій)
+Найпростіший спосіб для тестування на реальному пристрої без збірки.
+- Встановити **Expo Go** з Play Store / App Store
+- Запустити `npx expo start`
+- Відсканувати QR-код
+- **Особливість:** версія Expo Go має відповідати SDK проєкту
+
+### 2. Tunnel (`--tunnel`)
+Використовується коли телефон і комп'ютер **не в одній Wi-Fi мережі**.
+```bash
+npx expo start --tunnel
+```
+- Створює публічний URL через ngrok
+- Повільніше ніж LAN, але працює з будь-якої мережі
+
+### 3. Android Emulator
+Запуск на віртуальному пристрої через **Android Studio**.
+```bash
+npx expo start
+# натиснути 'a' в терміналі
+```
+- Потребує встановленого Android Studio та AVD
+- Зручний для розробки без фізичного пристрою
+
+### 4. Expo Snack (онлайн)
+Онлайн-середовище без встановлення будь-якого ПЗ.
+- Зайти на [snack.expo.dev](https://snack.expo.dev)
+- Вставити код прямо в браузері
+- **Обмеження:** не підтримує складні нативні модулі
+
+---
+
+## Висновки
+
+У ході виконання лабораторної роботи було створено простий React Native застосунок з трьома екранами та навігацією між ними. Освоєно базові компоненти (`View`, `Text`, `Image`, `TextInput`, `TouchableOpacity`, `ScrollView`, `FlatList`), налаштування стилів через `StyleSheet`, а також інтеграцію `@react-navigation/material-top-tabs` для реалізації вкладкової навігації. Протестовано запуск як на емуляторі Android, так і на реальному фізичному пристрої через Expo Go.
