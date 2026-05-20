@@ -14,14 +14,11 @@
 ### Кроки
 
 ```bash
-# 1. Клонувати репозиторій
-git clone https://github.com/MobileLabsRN2026/lab2.git
-cd lab2
 
-# 2. Встановити залежності
+# 1. Встановити залежності
 npm install
 
-# 3. Запустити
+# 2. Запустити
 npx expo start
 ```
 
