@@ -72,16 +72,6 @@ Drawer Navigator
 
 ---
 
-## Скріншоти
-
-> *(Додайте скріншоти після запуску застосунку)*
-
-| Головний екран | Деталі новини | Контакти | Drawer меню |
-|---|---|---|---|
-| `screenshots/main.png` | `screenshots/details.png` | `screenshots/contacts.png` | `screenshots/drawer.png` |
-
----
-
 ## Висновки (контрольні запитання)
 
 ### 1. Чим відрізняється `FlatList` від `ScrollView`?
