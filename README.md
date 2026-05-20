@@ -10,15 +10,13 @@
 
 Кожна лабораторна робота знаходиться в окремій гілці:
 
-| Гілка | Тема | Статус |
-|---|---|---|
-| [`lab01`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab01) | — | ✅ |
+| Гілка                                                                     | Тема                                        | Статус |
+|---------------------------------------------------------------------------|---------------------------------------------|---|
+| [`lab01`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab01) | Expo Go. Осноні компоненти                  | ✅ |
 | [`lab02`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab02) | Вкладена навігація. FlatList та SectionList | ✅ |
-| `lab03` | — | ⏳ |
-| `lab04` | — | ⏳ |
-| `lab05` | — | ⏳ |
-| `lab06` | — | ⏳ |
-| `lab07` | — | ⏳ |
+| [`lab03`](https://github.com/VolodymyrShevel/MobileLabsRN2026/tree/lab03) | Гра клікер                                  | ✅ |
+| `lab04`                                                                   | —                                           | ⏳ |
+
 
 ---
 
