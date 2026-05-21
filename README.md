@@ -1,6 +1,7 @@
 # MobileLabsRN2026 — Лабораторні роботи з React Native
 
 **Студент:** Шевель Володимир  ЗІПЗ-221
+
 **Репозиторій:** [VolodymyrShevel/MobileLabsRN2026](https://github.com/VolodymyrShevel/MobileLabsRN2026)  
 **Курс:** Мобільна розробка — React Native, 2026
 
